@@ -32,13 +32,81 @@ const vue_app = new Vue({
       },
       data: {
             // This holds your movies.json data.
-            movies: []
+            movies: [],
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+            title: "IMBD + Henry Casey's Top 9 Movies",
+            owner: "Henry Casey",
+            github: "https://github.com/hpc3"
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+          makeTextDate: function (dateArray) {
+              let tempDateObj = new Object();
+              tempDateObj.year = dateArray[0];
+              tempDateObj.day = dateArray[2];
+              switch (dateArray[1]) {
+                  case 1:
+                      tempDateObj.month = 'January';
+                      break;
+                  case 2:
+                      tempDateObj.month = 'February';
+                      break;
+                  case 3:
+                      tempDateObj.month = 'March';
+                      break;
+                  case 4:
+                      tempDateObj.month = 'April';
+                      break;
+                  case 5:
+                      tempDateObj.month = 'May';
+                      break;
+                  case 6:
+                      tempDateObj.month = 'June';
+                      break;
+                  case 7:
+                      tempDateObj.month = 'July';
+                      break;
+                  case 8:
+                      tempDateObj.month = 'August';
+                      break;
+                  case 9:
+                      tempDateObj.month = 'September';
+                      break;
+                  case 10:
+                      tempDateObj.month = 'October';
+                      break;
+                  case 11:
+                      tempDateObj.month = 'November';
+                      break;
+                  case 12:
+                      tempDateObj.month = 'December';
+                      break;
+              }
+              return tempDateObj.month + " " + tempDateObj.day + ", " + tempDateObj.year + " ";
+          },
+          like: function (index) {
+              this.movies[index].likes += 1;
+          },
+          dislike: function (index) {
+              this.movies[index].dislikes += 1;
+          },
+          posterClick: function (index) {
+
+              if (this.movies[index].posterindex === this.movies[index].posters.length - 1) {
+                  this.movies[index].posterindex = 0;
+              }else{
+                  this.movies[index].posterindex += 1;
+              }
+
+          },
+          timeText: function (minutes) {
+              let min = minutes % 60;
+              let hr = Math.floor(minutes/60);
+
+              return hr + "h " + min + "m";
+          }
       }
 })
-	
+
 
