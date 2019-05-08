@@ -68,5 +68,62 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Ghostbusters",
+            "iscore": 7.8,
+            "rating": "PG",
+            "runtime": 105,
+            "released": [1984, 6, 8],
+            "country": "USA",
+            "posters": ["img/ghostbusters.jpeg", "img/ghostbusters_2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0087332/",
+            "website": "https://www.ghostbusters.com/",
+            "likes": 10000,
+            "dislikes": 0,
+            "posterindex": 0
+      },
+      {
+            "title": "Star Wars: Episode IV - A New Hope",
+            "iscore": 8.6,
+            "rating": "PG",
+            "runtime": 121,
+            "released": [1977, 5, 25],
+            "country": "USA",
+            "posters": ["img/aNewHope.jpg", "img/aNewHope_2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0076759/",
+            "website": "https://www.starwars.com/",
+            "likes": 1337,
+            "dislikes": 13,
+            "posterindex": 0
+      },
+      {
+            "title": "Blade Runner",
+            "iscore": 8.2,
+            "rating": "R",
+            "runtime": 117,
+            "released": [1982, 6, 25],
+            "country": "USA",
+            "posters": ["img/bladeRunner.jpg", "img/bladeRunner_2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0083658/?ref_=nv_sr_2?ref_=nv_sr_2",
+            "website": "https://www.warnerbros.com/movies/blade-runner/",
+            "likes": 524,
+            "dislikes": 23,
+            "posterindex": 0
+      },
+      {
+            "title": "Jaws",
+            "iscore": 8.0,
+            "rating": "PG",
+            "runtime": 124,
+            "released": [1975, 6, 20],
+            "country": "USA",
+            "posters": ["img/jaws.jpg", "img/jaws_2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0073195/?ref_=nv_sr_1?ref_=nv_sr_1",
+            "website": "https://en.wikipedia.org/wiki/Jaws_(film)",
+            "likes": 666,
+            "dislikes": 333,
+            "posterindex": 0
       }
 ]
+
